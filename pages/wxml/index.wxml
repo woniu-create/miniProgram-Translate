@@ -1,0 +1,10 @@
+<!-- <template name="msgItem">
+    <view>
+        <text>{{index}}:{{msg}}</text>
+        <text>Time:{{time}}</text>
+    </view>
+</template>
+<template is="msgItem" data="{{...item}}"></template> -->
+<import src="item.wxml" />
+<template is="item" data="{{text: 'forbar'}}" />
+<!-- 自定义属性 data-xxx 后面的xxx可以随便定义 -->
