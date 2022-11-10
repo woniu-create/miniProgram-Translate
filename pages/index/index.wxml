@@ -14,7 +14,9 @@
         </view>
         <view class="text-area">
             <view class="text-title">译文</view>
-            <view class="text-result"></view>
+            <view class="text-result" wx:for="{{result}}" wx:key="index">
+                <text selectable="true">{{item.dst}}</text>
+            </view>
         </view>
     </view>
     <view class="copyright">© 2022 木咬虫</view>
