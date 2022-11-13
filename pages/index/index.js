@@ -12,10 +12,10 @@ Page({
     console.log("onLoad");
   },
   onShow: function () {
-    console.log("onShow", app.globalData);
+    console.log("onShow", app.globalData.curLang.lang);
     if (this.data.curLang.lang !== app.globalData.curLang.lang) {
       this.setData({ curLang: app.globalData.curLang });
-      //  this.onConfirm()
+      this.onConfirm();
     }
   },
   onInput: function (e) {
