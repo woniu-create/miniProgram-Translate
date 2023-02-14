@@ -9,7 +9,9 @@ Page({
     result: [],
   },
   onLoad: function (options) {
-    console.log("onLoad");
+    if (options.query) {
+      this.setData({ query: options.query });
+    }
   },
   onShow: function () {
     console.log("onShow", app.globalData.curLang.lang);

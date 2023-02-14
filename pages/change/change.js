@@ -9,7 +9,9 @@ Page({
     console.log("curLang", this.data.curLang);
   },
   onTapItem: function (e) {
+    console.log("e", e);
     let langObj = e.currentTarget.dataset;
+    console.log("langObj", langObj);
     wx.setStorageSync("language", langObj);
     this.setData({ curLang: langObj });
     app.globalData.curLang = langObj;
